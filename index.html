@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ffc3a0;
+        color: #8a2be2;
+        font-family: monospace;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-around;
+        font-family: monospace;
+        border-bottom: 5px solid black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ffc3a0;
+        /* overflow: hidden; */
+      }
+
+      #header-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .nav-link {
+        list-style: none;
+        display: inline-block;
+        margin-top: 25px;
+        /* position: fixed; */
+      }
+
+      .nav-link a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #8a2be2;
+        margin-left: 15px;
+        font-size: 18px;
+      }
+
+      .nav-link a:hover {
+        border: 2px solid #8a2be2;
+        padding: 5px 6px;
+        color: #8a2be2;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      .active {
+        border: 2px solid #8a2be2;
+        padding: 5px 6px;
+        color: #8a2be2;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      #home {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        margin-bottom: 30px;
+        border-bottom: 5px solid black;
+        padding-bottom: 20px;
+        /* background-color: gray; */
+      }
+
+      .size {
+        height: 400px;
+        width: 500px;
+        border-radius: 40px;
+      }
+
+      #home-text {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: monospace;
+        background-color: bisque;
+        /* height: 3000px; */
+        padding-top: 20px;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+      }
+
+      #home-text h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      #product {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 70px;
+
+        border-bottom: 5px solid black;
+      }
+
+      #description {
+        width: 400px;
+        border: 5px solid black;
+        padding: 5px 6px;
+        color: #8a2be2;
+        background-color: white;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #pro-image {
+        border-radius: 50px;
+        width: 400px;
+        margin-top: 70px;
+      }
+
+      img {
+        width: 450px;
+        border-radius: 10px;
+      }
+
+      button {
+        border: 2px solid #8a2be2;
+        padding: 5px 6px;
+        color: #8a2be2;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      #main {
+        margin-top: 85px;
+      }
+
+      #newsletter {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+      }
+
+      #form {
+        margin-top: 15px;
+      }
+
+      input[type="email"] {
+        border-radius: 15px;
+        border: 2px solid #8a2be2;
+        width: 500px;
+        height: 40px;
+        color: #8a2be2;
+      }
+
+      input[type="submit"] {
+        width: 73px;
+        height: 46px;
+        border-radius: 15px;
+        border: 2px solid #8a2be2;
+        color: #8a2be2;
+      }
+
+      #footer {
+        text-transform: uppercase;
+      }
+
+      #footer h1 {
+        border: 2px solid #8a2be2;
+        border-radius: 20px;
+        background-color: white;
+        padding: 7px 12px;
+        width: 600px;
+        text-align: center;
+        margin: auto;
+        margin-top: 60px;
+      }
+
+      .home,
+      .fpro {
+        text-align: center;
+        border: 2px solid #8a2be2;
+        border-radius: 15px;
+        padding: 7px 9px;
+        background-color: white;
+      }
+
+      span {
+        font-size: 18px;
+      }
+
+      h1 {
+        text-transform: uppercase;
+      }
+      @media only screen and (max-width: 600px) {
+        body {
+          display: grid;
+          grid-template-columns: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="header-img" src="Blulight.png" />
+      <nav id="nav-bar">
+        <li class="nav-link"><a href="#home" class="active">Home</a></li>
+        <li class="nav-link"><a href="#product">Products</a></li>
+        <li class="nav-link"><a href="#newsletter">Newsletter</a></li>
+      </nav>
+    </header>
+    <main id="main">
+      <div id="home-text">
+        <h1>A glass that makes your eye healthy.</h1>
+        <p>Prevention is greater than cure.</p>
+      </div>
+      <h1 class="home">Home</h1>
+      <div id="home">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gzcCaIvH9NA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          id="video"
+          class="size"
+        ></iframe>
+        <img src="homeblue.jpeg" alt="" class="size" />
+      </div>
+      <h1 class="fpro">Featured Product</h1>
+      <div id="product">
+        <div class="pro-img">
+          <img src="bluelight.jpg" alt="" />
+        </div>
+
+        <div>
+          <h1>Blue Light Blocking Glasses</h1>
+          <p id="description">
+            Non Polarized <br />
+            Lens width: 140 millimeters <br />
+            Bridge: 1.4 centimeters <br />
+            Arm: 14 centimeters <br />
+            Protection for Your Eyes - Blue light blocking glasses can
+            alleviates visual fatigue and discomfort from long periods of web
+            surfing, gaming and working under fluorescent lights with protection
+            and glare reduction .<br />
+            Blue Light Computer Glasses - Unlike other blue blockers on the
+            market with heavily tinted lenses. Our low color distortion lens is
+            optimized to provide the perfect balance blue light protection and
+            vision quality.Blue Light Filtering,Reduced Glare,UV Light
+            Blocking,Anti-Screen Flicker,Electromagnetic Ray Blocking lens. TR90
+            Material Frame - The frame of these blue light glasses are made from
+            TR90 material. TR material makes these computer glasses only half
+            weight of plastic glasses, and two times durable. And these blue
+            light blocking glasses are also constructed with reinforced metal
+            hinges to ensure durability and avoid breaking. No fade.
+          </p>
+          <span>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" value="1" required />
+          </span>
+          <br />
+          <span id="span1">Price: $14.99</span> <br />
+
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </main>
+
+    <footer id="newsletter">
+      <div id="footer">
+        <h1>Suscribe to our newsletter</h1>
+      </div>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your E-mail Address"
+          required
+        />
+        <input type="submit" name="submit" id="submit" />
+      </form>
+    </footer>
+  </body>
+</html>
